@@ -29,6 +29,19 @@ ThemeData getApplicationTheme() {
             getRegularStyle(fontSize: FontSize.s16, color: ColorManager.white)),
 
     //Button Theme
+    buttonTheme: ButtonThemeData(
+        shape: const StadiumBorder(),
+        disabledColor: ColorManager.grey1,
+        buttonColor: ColorManager.primary,
+        splashColor: ColorManager.primaryOpacity70),
+
+    //Elevated Button Theme
+    elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+            textStyle: getRegularStyle(color: ColorManager.white),
+            primary: ColorManager.primary,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(AppSize.s12)))),
 
     // Text Theme
 
