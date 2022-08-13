@@ -44,6 +44,13 @@ ThemeData getApplicationTheme() {
                 borderRadius: BorderRadius.circular(AppSize.s12)))),
 
     // Text Theme
+    textTheme: TextTheme(
+        headline1: getSemiBoldStyle(
+            color: ColorManager.darkGray, fontSize: FontSize.s16),
+        subtitle2: getMediumStyle(
+            color: ColorManager.lightGrey, fontSize: FontSize.s14),
+        caption: getRegularStyle(color: ColorManager.grey1),
+        bodyText1: getRegularStyle(color: ColorManager.grey)),
 
     //Input decoration theme - Text form field
   );
