@@ -2,6 +2,7 @@ import 'package:advanced_flutter_mvvm/presentation/forgot_password/forgot_passwo
 import 'package:advanced_flutter_mvvm/presentation/login/login.dart';
 import 'package:advanced_flutter_mvvm/presentation/main/main.dart';
 import 'package:advanced_flutter_mvvm/presentation/onboarding/onboarding.dart';
+import 'package:advanced_flutter_mvvm/presentation/resources/strings_manager.dart';
 import 'package:advanced_flutter_mvvm/presentation/splash/splash.dart';
 import 'package:flutter/material.dart';
 
@@ -44,10 +45,10 @@ class RouteGenerator {
     return MaterialPageRoute(
         builder: (_) => Scaffold(
             appBar: AppBar(
-              title: const Text('No Route Found'),
+              title: const Text(AppStrings.noRouteFound),
             ),
             body: const Center(
-              child: Text('No Route Found'),
+              child: Text(AppStrings.noRouteFound),
             )));
   }
 }
